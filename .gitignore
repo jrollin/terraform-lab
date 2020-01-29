@@ -1,0 +1,10 @@
+# Log files (if you are creating logs in debug mode, uncomment this)
+*.log
+
+# practice only, no need for keeping state infos
+.terraform*
+terraform.tfstate*
+*.tfvars
+
+# generated during exercices
+ip_address.txt
