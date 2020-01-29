@@ -2,10 +2,7 @@
 
 ## What we will build ?
 
-@todo: schema
-
-* webserver infra as code
-* Repo + CI pipeline + deploy script
+![Schéma](assets/schema.png)
 
 ## Requirements
 
