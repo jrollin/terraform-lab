@@ -107,7 +107,7 @@ terraform apply
 
 
 
-You should see the instance in AWS console
+You should see the instance in AWS console ((services > ec2 > instances ))
 
 ![EC2 panel](assets/1_example_instance_created.png)
 
