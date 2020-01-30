@@ -433,12 +433,12 @@ Settings > CI/CD > Secret variables
 
 
 
-Example **DEPLOY_USER**
+Example **DEPLOY_USER** (for AMI ubuntu)
 
 ```
-`ubuntu` if AMI ubuntu on AWS 
-
+ubuntu
 ```
+
 Example **INSTANCES** (to replace)
 
 ```ini
