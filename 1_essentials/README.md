@@ -173,7 +173,7 @@ Terraform informs you that the instance need to be replace
       ~ availability_zone            = "eu-west-3b" -> (known after apply)
 ```
 
-You can check in AWS console 
+You can check in AWS console (services > ec2 > instances )
 
 ![AWS console](assets/1_terraform_update.png)
 
