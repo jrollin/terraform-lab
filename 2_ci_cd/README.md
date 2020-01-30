@@ -8,7 +8,7 @@
 
 Aws environnement configured
 
-## Steps
+## Step 1 : Infra as Code
 
 ### Configure SSH key
 
@@ -314,9 +314,29 @@ output ips {
 }
 ```
 
+### Plan and Apply
+
+Verify informations
+
+```bash
+terraform plan
+```
+
+Apply 
+
+```bash
+terraform apply
+```
+
+> retrieve your instance(s) ip
 
 
-### Configure CI on Gitlab
+Your infra is ready
+
+
+## Step 2: Application code
+
+### Host code and configure CI on Gitlab
 
 * Use case with react application ([create react app ](https://fr.reactjs.org/docs/create-a-new-react-app.html)) 
 * Use an account on [gitlab.com](https://about.gitlab.com/)
@@ -324,6 +344,11 @@ output ips {
 
 > Info: We need an http Server to serve our static files, we can install `nginx` on instance startup through `userdata` OR choose an `ami with nginx` 
 
+### Version your code
+
+Push your code to gilab
+
+> nb: using ssh over HTTPS is a good pratice
 
 ### CI pipeline stages
 
@@ -428,11 +453,13 @@ b3BlbnNza.......
 -----END OPENSSH PRIVATE KEY-----
 ```
 
+> Warning: It is not a good pratice to use Private key here (not production ready). We should use a `deploy ssh user` configured with `ssh public key` on remote instance
+
 
 ### Launch new Job / merge to master 
 
 
-Open URL in your browser
+Open Instance IP in your browser, you should see your `Node code`
 
-That's it !
+Congrats
 
