@@ -323,10 +323,16 @@ output ips {
 }
 ```
 
+
+
 ### Configure CI on Gitlab
 
 * Use case with react application ([create react app ](https://fr.reactjs.org/docs/create-a-new-react-app.html)) 
 * Use an account on [gitlab.com](https://about.gitlab.com/)
+
+
+> Info: We need an http Server to serve our static files, we can install `nginx` on instance startup through `userdata` OR choose an `ami with nginx` 
+
 
 ### CI pipeline stages
 
