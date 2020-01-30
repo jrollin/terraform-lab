@@ -62,15 +62,6 @@ provider "aws" {
 #### Define resources AWS
 
 
-File `resources.tf`
-```hcl
-provider "aws" {
-  region  = var.region
-  profile = var.profile
-}
-
-```
-
 Define ssh ssh pair key to use to connect to our instances :
 
 ```bash
